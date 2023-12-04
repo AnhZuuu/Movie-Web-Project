@@ -1,0 +1,372 @@
+.nav-bar {
+  display: flex !important;
+  background-color: black;
+  text-decoration: none;
+  justify-content: space-evenly !important;
+  padding: 15px;
+  
+}
+.nav-bar img {
+  display: flex;
+  
+  width: 100px;
+  height: 100%;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  /* padding: 50px !important; */
+  
+}
+
+.nav-bar a:hover {
+  background-color: coral;
+  color: blue;
+}
+row {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+img {
+  
+  
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 10px;
+  /* color: #241f4d;
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      height: 30%; */
+}
+
+.column {
+  /* display: block;
+    border: 20px;
+    float: left;
+    width: 33.33%; */
+  padding: 0;
+  display: flex;
+  background-color: rgb(3, 3, 68);
+}
+
+.card {
+  background-color: black;
+  border: 2px solid rgb(3, 3, 68);
+  padding: 10px;
+  color: black !important;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  opacity: 1;
+  
+}
+.card:hover {
+  background-color: rgb(3, 3, 68);
+  color:red !important;
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.displayer {
+  display: grid;
+    gap: 6px;
+    transition: all 0.3s linear;
+    user-select: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    scroll-behavior: smooth;
+}
+
+.card img {
+  width: 350px;
+  height: 500px;
+}
+.card span {
+  font-weight: bold !important;
+  font-size: medium !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.card button {
+  /* padding-left: 260px;
+    padding-right: 260px; */
+  font-weight: bold;
+  color: black;
+  background-color: coral;
+  width: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.card p {
+  margin-bottom: 5px;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-bar {
+  border: 2px solid black;
+  background-color: yellow;
+  text-align: center;
+}
+.product-details {
+  width: 100%;
+
+}
+.director {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 30px;
+  font-weight: bold;
+}
+.product-tumb img{
+  display: flex;
+  justify-content: center !important;
+  max-width: 1500px;
+  max-height: 500px;
+}
+.page-footer {
+  background-color: black !important;
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  border-style: inset;
+  border-color:white;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup img {
+  width: 100%;
+  height: 500px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.Dashboard-css  {
+  background-color: rgb(4, 2, 2);
+  color: white;
+}
+.Dashboard-css p {
+  background-color: black;
+  color: black;
+  font-weight: bold;
+  width: 10%;
+
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+td, img {
+  width:350px;
+  height: 500px;
+}
+
+.btn-add p {
+  color: black !important;
+  font-weight: bold;
+  background-color: gray;
+  width: 10%;
+}
